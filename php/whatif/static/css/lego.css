@@ -1,0 +1,42 @@
+
+#lego-tower {
+    position: relative;
+    margin: 5em 0 2em 0;
+}
+
+#lego-bricks-svg {
+    width: fit-content;
+}
+
+#lego-tower .measurer {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    border-top: 1px dashed var(--secondaryColor);
+}
+
+#lego-tower .measurer p {
+    translate: 0 calc(-50% + 1px);
+    background-color: var(--bgColor);
+    width: fit-content;
+    margin: auto;
+    padding: 0 4px;
+}
+
+#lego-tower .tower-wrapper {
+    position: relative;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+#lego-tower img {
+    width: 20em;
+    translate: 0 -50%;
+}
+
+footer {margin-top: 0}

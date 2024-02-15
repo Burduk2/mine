@@ -1,0 +1,34 @@
+.whatif-vault-display {display: none}
+
+section {
+    margin: 3em auto 7em auto;
+    width: 600px;
+    max-width: 90%;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: .5em;
+    color: var(--primaryColor) !important;
+}
+.section-title a {
+    color: var(--brandColor);
+    text-decoration: none;
+}
+
+/* body.dark-theme section p, body.dark-theme section li, body.dark-theme section b {color: #ccc} */
+/* body.light-theme section p, body.light-theme section li, body.light-theme section b {color: #666} */
+body.dark-theme section, body.dark-theme section * {color: #ccc}
+body.light-theme section, body.light-theme section * {color: #666}
+
+section b {
+    font-size: 1.1em;
+    font-family: var(--primaryFont);
+    padding-bottom: .2em;
+    display: block;
+}
+section a {
+    text-decoration: none;
+    color: var(--brandColor) !important;
+}
+section a:hover {text-decoration: underline}

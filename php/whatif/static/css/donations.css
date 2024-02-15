@@ -1,0 +1,39 @@
+.notf-container {
+    margin: 5em 2em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.notf-container .notf {
+    background-color: var(--supportColor);
+    margin: 1em 0;
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 600px;
+}
+
+.notf-container .top-menu {
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 1em; */
+    border-bottom: 1px dashed #ccc;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+body.dark-theme .notf-container .top-menu {border-bottom-color: #666}
+
+.notf-container .notf .amt {
+    color: var(--brandColor);
+    font-weight: 600;
+    font-size: 3.5em;
+    line-height: 1;
+    margin-bottom: .3em;
+}
+.notf-container .top-menu .date {
+    white-space: nowrap;
+    margin-bottom: .3em;
+}
+
+.notf-container .notf ul {padding-left: 1em}
