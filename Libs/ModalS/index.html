@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModalS Lib</title>
+    <script src="ModalS.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body style="background: #353535; height: 1000vh;">
+
+    <button m-toggle="login">Show login</button>
+    <button m-open="target">Show example</button>
+
+
+    <div m-name="target" m-backdrop=".class-name">
+        <h1>Hallo</h1>
+        <button m-close="target">Close</button>
+    </div>
+
+    <div m-name="login">
+        <h1>Login</h1>
+        <button m-toggle="login">Close</button>
+    </div>
+
+</body>
+</html>
