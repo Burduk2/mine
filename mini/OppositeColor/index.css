@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+body {
+    background-color: #20201f;
+}
+
+.logo {
+    margin: 25px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logo span {
+    color: #e7e74e;
+}
+
+main {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-inps-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #777;
+}
+
+.color-inps-wrapper span {
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 20px;
+}
+
+.color-inps-wrapper .divider {
+    height: 150px;
+    margin: 0 20px;
+    width: .7px;
+    background-color: #777;
+}
+
+.color-inp {
+    background-color: #0000;
+    border: 0;
+    height: 75px;
+    width: 75px;
+    margin: 0 5px;
+    outline: 5px solid #666;
+    border-radius: 50%;
+    transition: 50ms;
+    padding: 0 2px;
+}
+
+#color-inp:hover {
+    outline: 10px solid #777;
+    cursor: pointer;
+}
+
+.color-inp::-webkit-color-swatch {
+    border: none;
+    border-radius: 1000px;
+}
+
+.color-inps-wrapper div.color-inp {
+    box-sizing: border-box;
+    height: 75px;
+    width: 75px;
+    background-color: #0000;
+    padding: 4.5px; 
+}
+
+.color-inps-wrapper div.color-inp div {
+    background-color: #00f;
+    height: 100%;
+    border-radius: 50%;
+}
+
+main p {
+    transform: translateY(-50%);
+    background-color: #20201f;
+    padding: 3px;
+}
+
+.decolor-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.decolor-container .decolor-color {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.decolor-container .decolor-color button {
+    background-color: #fff1;
+    font-size: 17px;
+    border: 0;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.decolor-container .decolor-color button:hover {
+    background-color: #444;
+}
+
+.copy-color-tooltip {
+    position: fixed;
+    display: none;
+    transform: translate(35px, -110%);
+    height: 25px;
+    overflow: hidden;
+    top: 0; left: 0;
+    background-color: #444;
+    font-size: 20px;
+    border: 1px solid #666;
+    padding: 3px 5px;
+    border-radius: 5px;
+    animation: fade-in 100ms forwards;
+}
+
+.copy-color-tooltip span {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: .1;
+    } to {
+        opacity: 1;
+    }
+}

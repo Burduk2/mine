@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeColor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="logo"><span>De</span>Color</h1>
+
+    <main>
+        <div class="color-inps-wrapper">
+            <input type="color" class="color-inp" id="color-inp" value="#ffff00" 
+                title='Press "C" to open color picker'>
+            <div class="divider"></div>
+            <div class="color-inp" title="Opposite color"><div></div></div>
+        </div>
+
+        <p title="Max contrast possible to reach">Contrast: <span id="max-contrast">100.0%</span></p>
+
+        <div class="decolor-container">
+            <div class="decolor-color left">
+                <button data-tooltip="hex-color">ffff00</button>                
+                <button data-tooltip="rgb-color">255, 255, 0</button>
+                <button data-tooltip="hsl-color">60, 100%, 50%</button>
+            </div>                     
+            <div class="decolor-color right">
+                <button data-tooltip="hex-color">0000ff</button>
+                <button data-tooltip="rgb-color">0, 0, 255</button>
+                <button data-tooltip="hsl-color">240, 100%, 50%</button>
+            </div>
+        </div>
+    </main>
+    <div class="copy-color-tooltip"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
